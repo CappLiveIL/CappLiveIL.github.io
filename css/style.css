@@ -1,0 +1,493 @@
+/*
+
+	#Codded By Tal Leon
+	#contact mail - tal222881@gmail.com
+
+*/
+
+
+.visible-android {
+  display:none;
+}
+.visible-ios {
+  display:none;
+}
+.on-device .visible-android, .on-device .visible-android {
+  display:inline-block;
+}
+.device-ios .visible-android {
+  display:none !important;
+}
+.device-ios .hidden-ios {
+  display:none !important;
+}
+.device-android .hidden-android {
+  display:none !important;
+}
+.device-android .visible-ios {
+  display:none !important;
+}
+
+
+/*
+=================
+	#Genral
+=================
+*/
+
+a , a:hover {
+	text-decoration:none;
+}
+
+.vcenter {
+   display: inline-block;
+   vertical-align: middle;
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.vHelper {
+	height:700px;
+	display:inline-block;
+}
+
+/*
+=================
+	#Header
+=================
+*/
+
+header {
+	padding:36px 0px;
+}
+
+header a.logo {
+	color:#dbdbdb;
+	displaY:inline-block;
+	font-weight:bold;
+	font-family:'danuberegular';
+	letter-spacing:2px;
+	font-size:30px;
+	line-height:100px;
+}
+
+header a.logo:before {
+	content:'';
+	display:block;
+	background:url('../images/logo.png') no-repeat;
+	width:100px;
+	height:100px;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	float:left;
+	margin-right:33px;
+}
+
+header .applinks {
+	margin-top:12px;
+}
+
+header .applinks a {
+	text-indent:-9999px;
+	text-align:left;
+	display:inline-block;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	vertical-align:bottom;
+}
+
+header .applinks a.apple {
+	background:url('../images/appstore.png') no-repeat;
+	width:49px;
+	height:61px;
+}
+
+header .applinks a.apple:hover {
+	background:url('../images/appstore-hover.png') no-repeat;
+}
+
+header .applinks div.line {
+	width:4px;
+	height:60px;
+	background:#ffb900;
+	display:inline-block;
+	vertical-align:bottom;
+	margin-right:49px;
+	margin-left:47px;
+}
+
+header .applinks a.android {
+	background:url('../images/googleplay.png') no-repeat;
+	width:54px;
+	height:60px;
+}
+
+header .applinks a.android:hover {
+	background:url('../images/googleplay-hover.png') no-repeat;
+}
+
+/*
+=================
+	#Enter - Home page
+=================
+*/
+
+section.enter {
+	background:url('../images/bgEnter.png') no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-attachment: fixed;
+    background-position: top center;
+	padding:22vw 0px;
+	position:relative;
+	overflow:hidden;
+}
+
+
+
+section.enter h3 {
+	font-family:'robotothin';
+	font-size:35px;
+	color:#ffffff;
+	line-height:170%;
+	margin:0px;
+}
+
+section.enter strong {
+	font-family:'robotoregular';
+	font-size:26px;
+	color:#ffffff;
+	font-weight:100;
+	display:block;
+	text-align:center;
+	margin-top:3vw;
+}
+
+section.enter .playslink {
+	text-align:center;
+	margin-top:3vw;
+}
+
+
+section.enter .playslink img {
+	max-width:130px;
+	margin:0px 10px;
+}
+
+section.enter .appReveal {
+	top:0px;
+	right:0px;
+	background:url('../images/phonesbackground.png') right no-repeat;  
+	background-size:contain;
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	position:absolute;
+	overflow:hidden;
+	width:47%;
+	height:100%;
+}
+
+section.enter .appReveal img {
+	max-width:100%;
+    position: absolute;
+    top: 50%;
+	margin-top:30px;
+	left:0px;
+	transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+
+/*
+=================
+	#Features - Home page
+=================
+*/
+section.features {
+	overflow:hidden;
+}
+
+section.features i.live-icon {
+	background:url('../images/live-icon.png') no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	margin-bottom:15px;
+}
+
+section.features i.group-icon {
+	background:url('../images/group-icon.png') no-repeat;
+	width:67px;
+	height:57px;
+	display:block;
+	margin-bottom:15px;
+}
+
+section.features i.group-icon {
+	background:url('../images/group-icon.png') no-repeat;
+	width:67px;
+	height:57px;
+	display:block;
+	margin-bottom:15px;
+}
+
+section.features i.phrase-icon {
+	background:url('../images/phrase-icon.png') no-repeat;
+	width:86px;
+	height:52px;
+	display:block;
+	margin-bottom:15px;
+}
+
+section.features i.effects-icon {
+	background:url('../images/effects-icon.png') no-repeat;
+	width:103px;
+	height:40px;
+	display:block;
+	margin-bottom:15px;
+}
+
+section.features .container-fluid:nth-child(odd){
+	background:#f3f3f3;
+}
+
+section.features .container {
+	padding:50px 0px;
+}
+
+section.features h2 {
+	font-size:26px;
+	font-family:'robotoregular';
+}
+
+section.features p {
+	font-size:19px;
+	font-weight:ligher;
+	color:#737373;
+	line-height:180%;
+	font-family:'robotoregular';
+}
+
+/*
+=================
+	#Try Capp - Home page
+=================
+*/
+
+section.try {
+	background:url('../images/bgTry.png') no-repeat center;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	width:100%;
+	height:700px;
+}
+
+section.try h3 {
+	color:#ffffff;
+	font-family:'robotobold';
+	font-size:50px;
+}
+
+section.try strong {
+	color:#ffffff;
+	font-weight:100;
+	font-family:'robotolight';
+	font-size:27px;
+	display:block;
+}
+
+section.try a.store.apple:before {
+	content:'';
+	display:inline-block;
+	background:url('../images/small-apple-store.png') left no-repeat;
+	width:27px;
+	height:35px;
+	float:left;
+	margin-top:-8px;
+	margin-right:15px;
+}
+
+
+section.try a.store.apple:hover:before {
+	background-position:-27px 0px;
+}
+
+section.try a.store.android:before {
+	content:'';
+	display:inline-block;
+	background:url('../images/small-android-store.png') left no-repeat;
+	width:33px;
+	height:36px;
+	float:left;
+	margin-top:-8px;
+	margin-right:15px;
+}
+
+section.try a.store.android:hover:before {
+	background-position:-33px 0px;
+}
+
+section.try a.store:hover {
+	background:transparent;
+	color:#ffb900;
+	transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+}
+
+
+section.try a.store {
+	background:#ffb900;
+	border:2px solid #ffb900;
+	display:inline-block;
+	margin:25px 7px;
+	border-radius:100px;
+	-moz-border-radius:100px;
+	-webkit-border-radius:100px;
+	text-align:center;
+	font-family:'robotoregular';
+	color:#ffffff;
+	font-size:18px;
+	padding:20px 25px 15px;
+	transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+}
+
+
+/*
+=================
+	#Footer - Home page
+=================
+*/
+
+footer {
+	background:#36454f;
+	padding:15px 0px;
+	color:#ffffff;
+	overflow:hidden;
+}
+
+footer a.company {
+	display:inline-block;
+	color:#ffffff;
+	font-weight:bold;
+	font-family:'danuberegular';
+	letter-spacing:2px;
+	font-size:40px;
+	margin-bottom:10px;
+}
+
+
+footer p.social {
+	font-size:20px;
+}
+
+footer ul.social {
+	display:block;
+	margin:25px 0px 0px -20px;
+	padding:0px;
+	list-style:none;
+}
+
+footer ul.social li {
+	display:inline-block;
+	margin:0px 10px;
+	vertical-align:bottom;
+}
+
+footer ul.social li a:before {
+	width:37px;
+	height:34px;
+	content:'';
+	display:block;
+	background:url('../images/social-icons.png') no-repeat;
+}
+
+footer ul.social li.facebook a:before {
+	background-position:0px 0px;
+}
+
+footer ul.social li.instgram a:before {
+	background-position:0px -43px;
+}
+
+footer ul.social li.twitter a:before {
+	background-position:0px -84px;
+}
+
+footer ul.social li.linkin a:before {
+	background-position:0px -126px;
+}
+
+footer ul.social li a {
+	color:#ffffff;
+	display:block;
+}
+
+footer div.sub_links {
+	display:inline-block;	
+	vertical-align:top;
+	margin-right:120px;
+}
+
+footer div.sub_links h4 {
+	color:#ffffff;
+	font-family:'robotobold';
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+footer div.sub_links ul.links {
+	margin:20px 0px 0px;
+	padding:0px;
+	display:block;
+	list-style:none;
+}
+
+footer div.sub_links ul.links li {
+	display:block;
+	margin-bottom:10px;
+}
+
+footer div.sub_links ul.links li a {
+	font-weight:100;
+	font-family:'robotolight';
+	color:#87959f;
+}
+
+footer hr {
+	width:100%;
+	height:1px;
+	background:#87959f;
+	border:0px;
+	display:block;
+}
+
+footer .terms a{
+	font-weight:100;
+	font-family:'robotolight';
+	color:#87959f;
+}
+
+footer a.tl {
+	display:inline-block;
+	text-align:left;
+	text-indent:-99999px;
+	background:url('../images/talLogoOfficalSmall.png') no-repeat;
+	width:40px;
+	height:24px;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}

@@ -1,0 +1,73 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+	header {
+		padding:0px;
+	}
+
+	header a.logo:before {
+		display:none;
+	}
+
+	header .applinks {
+		margin:0px;
+	}
+
+	header .applinks div.line {
+		display:none;
+	}
+
+	header .applinks a.android {
+		background: #ffb900 url(../images/googleplay-res.png) center center no-repeat;
+		background-size: contain;
+		-moz-background-size: contain;
+		-webkit-background-size: contain;
+		width: 100px;
+		height: 100px;
+		position:relative;
+		right:-15px;
+	}
+
+	header .applinks a.apple {
+		background: #ffb900 url(../images/appstore-res.png) center center no-repeat;
+		background-size: contain;
+		-moz-background-size: contain;
+		-webkit-background-size: contain;
+		width: 100px;
+		height: 100px;
+		position:relative;
+		right:-15px;
+	}
+
+	section.enter {
+		text-align:center;
+	}
+	section.enter .appReveal {
+		display:none;
+	}
+
+	section.features .vertical-align{
+		display:block;
+	}
+	
+	footer div.social , footer div.rights ,  footer div.terms{
+		text-align:center;
+	}
+
+	footer div.terms {
+		padding:20px 0px;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
